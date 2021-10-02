@@ -5,13 +5,20 @@ import {
   Link,
   useParams,
 } from "react-router-dom";
+import { DataProvider } from "./GlobalState";
+import Header from "./components/headers/Header";
+import MainPages from "./components/mainpages/Pages";
+
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <h1>Hello world!</h1>
-      </div>
-    </Router>
+    <DataProvider>
+      <Router>
+        <div className='App'>
+          <Header />
+          <MainPages />
+        </div>
+      </Router>
+    </DataProvider>
   );
 }
 
