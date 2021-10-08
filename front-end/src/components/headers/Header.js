@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
-import { GlobalState } from "../../GlobalState";
+import React from "react";
+// import { GlobalState } from "../../GlobalState";
 import Menu from "./icon/bars-solid.svg";
 import Close from "./icon/times-solid.svg";
 import Cart from "./icon/shopping-cart-solid.svg";
 import { Link } from "react-router-dom";
 
 function Header() {
-  const value = useContext(GlobalState);
+  // const value = useContext(GlobalState);
   return (
     <header>
       <div className='menu'>
